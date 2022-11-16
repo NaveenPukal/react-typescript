@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useMemo } from "react";
+
 
 type CourseProps = {
   items: {
@@ -14,6 +15,6 @@ export default function Array(props: CourseProps) {
         <h3>Your role is {list.Role} using {list.course}</h3>
       </div>
     })}
-
+    <input value='' type='text' ></input>
   </div>;
 }

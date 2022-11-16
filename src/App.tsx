@@ -10,6 +10,8 @@ import Oscar from './components/Oscar';
 import Button from './components/Button';
 import Input from './components/Input';
 import Array from './components/Array';
+import Container from './components/Container';
+import LoggedIn from './components/state/LoggedIn';
 
 function App() {
   const personName = {
@@ -62,7 +64,8 @@ function App() {
       <Button handleclick={(event) => alert('button clicked' + event)} />
       <Input value='' handleChange={(event) => { console.log(event) }} />
       <Array items={course} />
-
+      <Container styles={{ border: '5px sodid black', padding: '1rem' }} />
+      <LoggedIn />
     </div>
 
   );
