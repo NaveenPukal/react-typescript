@@ -10,7 +10,7 @@ export default function LoggedIn() {
   }
   return (
     <div>
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleLogin}>Log in</button>
       <button onClick={handleLogout}>Logout</button>
       <div>User is  {isLoggedIn ? 'Logged In' : 'Logged out'}</div>
     </div>
